@@ -30,7 +30,7 @@ vagrantfile-local:
                     - '--parser future'
         synced_folder:
             DwBxDYBBwLF8:
-                source: ../site/public
+                source: ../site
                 target: /var/www
                 nfs: 'false'
         usable_port_range: 2200..2250
@@ -80,7 +80,7 @@ apache:
     vhosts:
         ufaJZX5gM6tF:
             servername: mentorapp.dev
-            docroot: /var/www
+            docroot: /var/www/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
